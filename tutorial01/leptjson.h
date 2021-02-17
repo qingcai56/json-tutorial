@@ -1,5 +1,6 @@
 #ifndef LEPTJSON_H__
 #define LEPTJSON_H__
+//多个文件或目录结构，可以用 项目名称_目录_文件名称_H_ 这种命名方式
 
 typedef enum { LEPT_NULL, LEPT_FALSE, LEPT_TRUE, LEPT_NUMBER, LEPT_STRING, LEPT_ARRAY, LEPT_OBJECT } lept_type;
 
