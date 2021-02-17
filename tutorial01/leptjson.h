@@ -4,6 +4,8 @@
 
 typedef enum { LEPT_NULL, LEPT_FALSE, LEPT_TRUE, LEPT_NUMBER, LEPT_STRING, LEPT_ARRAY, LEPT_OBJECT } lept_type;
 
+//c没有命名空间，所以一般项目简写作为标识符的前缀
+//每个结点使用lept_value结构体表示，我们称之为JSON值
 typedef struct {
     lept_type type;
 }lept_value;
@@ -14,6 +16,7 @@ enum {
     LEPT_PARSE_INVALID_VALUE,
     LEPT_PARSE_ROOT_NOT_SINGULAR
 };
+
 
 int lept_parse(lept_value* v, const char* json);
 
